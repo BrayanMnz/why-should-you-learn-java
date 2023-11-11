@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public void greetingsBarcamp() {
+    
+	Scanner sc = new Scanner(System.in);
+    
+	System.out.print("           What is your name ?  : ");
+	String name = sc.next();
+    
+
+	System.out.print("           Are you a Java developer ?  (y/n)  : ");
+	char javaDeveloper = sc.next().charAt(0);
+    
+
+	if(javaDeveloper != 'y' && javaDeveloper != 'n'){
+		System.out.println("Please answer using y or n, other keys are not allowed. \n");
+
+		System.out.println("Exiting....");
+
+		sc.close();
+
+		System.exit(0);
+	}
+	
+	
+	System.out.println(String.format("Hello, %s \nWelcome to the Why Should you learn Java talk in Barcamp 2023 ", name));
+
+	if(javaDeveloper == 'y'){	
+		System.out.println("Since you are already a Java Developer, this will help you to see new enhancements on the Language ");
+	}else{
+		System.out.println("This talk will show you WHY you should start learning and using Java professionally, since you are not a Java Developer");
+	}
+}

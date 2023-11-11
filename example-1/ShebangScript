@@ -1,0 +1,6 @@
+#!/home/brayanmnz/.sdkman/candidates/java/21-open/bin/java --source 21 --enable-preview
+
+
+void main(){
+	System.out.println("Hello, World from a ShebangScript in Java");
+}
